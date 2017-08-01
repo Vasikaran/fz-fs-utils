@@ -1,0 +1,26 @@
+{
+  "name": "fz-fs-utils",
+  "version": "0.0.1",
+  "description": "make easy fs usage",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasikaran/fz-fs-utils.git"
+  },
+  "keywords": [
+    "copy",
+    "move"
+  ],
+  "author": "Vasikaran S <vasikaran.25@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasikaran/fz-fs-utils/issues"
+  },
+  "homepage": "https://github.com/Vasikaran/fz-fs-utils#readme"
+}
