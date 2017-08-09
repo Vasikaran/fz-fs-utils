@@ -1,6 +1,6 @@
 {
   "name": "fz-fs-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "make easy fs usage",
   "main": "lib/index.js",
   "scripts": {

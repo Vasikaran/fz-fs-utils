@@ -2,14 +2,11 @@ import fs from 'fs';
 import path from 'path';
 
 function copyFile(srcPath, targetPath, isCopy = true){
-    let readStream = fs.createReadStream(srcPath);
-    let writeStream = fs.createWriteStream(targetPath);
-    readStream.pipe(writeStream);
-    readStream.on('end', ()=>{
-        if (!isCopy){
-            fs.unlinkSync(srcPath);
-        }
-    })
+    let content = fs.readFileSync(srcPath);
+    fs.writeFileSync(targetPath, content, 'utf-8');
+    if (!isCopy){
+        fs.unlinkSync(srcPath);
+    }
 }
 
 function iterateDirectory(srcPath, targetPath, isCopy){
